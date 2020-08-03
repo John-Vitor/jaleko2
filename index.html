@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <title>jaleko2</title>
+ <script src="/dist/build.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- <script src="vue-youtube/dist/vue-youtube.js"></script> -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+
+
+</head>
+
+<body>>
+
+<div class="app">
+  <div class="box">
+    <form>
+      <h1>Teste de video</h1>
+      <input type="text" name="name" v-model="search">
+    </form>
+  </div>
+</div>
+
+<div>
+  <ul>
+    <li v-for='video in Videos'>
+      {{ video.name }}
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</body>
+</html>
